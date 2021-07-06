@@ -22,10 +22,6 @@ button:focus, input:focus {
     opacity: 0.8;
 }
 
-[v-cloak] {
-    display: none !important;
-}
-
 /* Fade transitions */
 .fade-enter, .fade-leave-active {
     opacity: 0
@@ -230,4 +226,17 @@ h1 {
 
 .cart ul .cart-item button {
     margin-right: 3px;
+}
+
+[v-cloak]> * {
+    display: none !important;
+}
+
+[v-cloak]> #loading {
+    display: block !important;
+    padding: 1em;
+}
+
+#loading {
+    display: none;
 }
