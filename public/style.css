@@ -26,11 +26,13 @@ button:focus, input:focus {
     display: none !important;
 }
 
-.fade-enter-active {
-    transition: opacity .5s
-}
+/* Fade transitions */
 .fade-enter, .fade-leave-active {
     opacity: 0
+}
+
+.fade-enter-active {
+    transition: opacity .5s
 }
 
 /* Sections */
